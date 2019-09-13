@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import ListingHeader from "./../ListingHeader/ListingHeader";
 import store, { STEP_ONE } from "./../../redux/store";
+import ListingHeader from "./../ListingHeader/ListingHeader";
 import { Link } from "react-router-dom";
 
 class StepOne extends Component {
