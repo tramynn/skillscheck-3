@@ -1,8 +1,15 @@
 .Navbar {
-  /* display: flex; */
-  justify-content: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  display: flex;
   align-items: center;
   background-color: #519872;
-  height: 12vh;
+  height: 10vh;
   width: 100vw;
+}
+
+.Navbar-header {
+  width: 75vw;
 }
