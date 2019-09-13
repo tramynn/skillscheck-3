@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 class Dashboard extends Component {
   constructor() {
@@ -10,7 +10,9 @@ class Dashboard extends Component {
   render() {
     return (
       <div className="Dashboard">
-        <header className=""></header>
+        <header className="Dashboard-header">
+          <h1>Dashboard</h1>
+        </header>
       </div>
     );
   }
