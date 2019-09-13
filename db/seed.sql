@@ -8,6 +8,7 @@ CREATE TABLE listing (
   zip INTEGER NOT NULL
 );
 
+-- ADD
 -- add house
 INSERT INTO listing 
 (name, address, city, state, zip, img, mortgage, rent)
@@ -19,9 +20,11 @@ VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
 -- ADD COLUMN mortgage NUMERICN NOT NULL,
 -- ADD COLUMN rent NUMERIC NOT NULL
 
+-- GET
 -- get houses
 SELECT * FROM listing;
 
+-- DELETE
 -- delete house
 DELETE FROM listing
 WHERE property_id = $1;
