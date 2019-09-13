@@ -12,7 +12,7 @@ class Dashboard extends Component {
       <div className="Dashboard">
         <header className="Dashboard-header">
           <h1>Dashboard</h1>
-          <Link to="/addproperty">
+          <Link to="/wizard/step/:id">
             <button>Add New Property</button>
           </Link>
         </header>
