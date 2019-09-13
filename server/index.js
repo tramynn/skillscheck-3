@@ -7,8 +7,8 @@ const app = express();
 const { SERVER_PORT, CONNECTION_STRING } = process.env;
 
 massive(CONNECTION_STRING)
-  .then(dbInstance => {
-    app.set("db", dbInstance);
+  .then(db => {
+    app.set("db", db);
     console.log("Database is connected :D");
   })
   .catch(err => console.log(err));
