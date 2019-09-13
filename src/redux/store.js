@@ -5,28 +5,48 @@ const initialState = {
   address: "",
   city: "",
   state: "",
-  zip: 0,
+  zip: "",
   img: "",
-  mortgage: 0,
-  rent: 0
+  mortgage: "",
+  rent: ""
 };
 
 export const STEP_ONE = "STEP_ONE";
 export const STEP_TWO = "STEP_TWO";
 export const STEP_THREE = "STEP_THREE";
-export const STEP_FOUR = "STEP_FOUR";
+export const CLEAR = "STEP_FOUR";
 
 function reducer(state = initialState, action) {
   const { type, payload } = action;
-  const { name, address, city, state, zip, img, mortgage, rent}
-  case STEP_ONE: {
-    return {
-      ...state,
-      
+  switch (type) {
+    case STEP_ONE: {
+      return {
+        ...state,
+        name: payload.name,
+        address: payload.address,
+        city: payload.city,
+        state: payload.state,
+        zip: payload.zip,
+        img: payload.img,
+        mortgage: payload.mortgage,
+        rent: payload.rent
+      };
     }
+    case CLEAR: {
+      return {
+        name: "",
+        address: "",
+        city: "",
+        state: "",
+        zip: "",
+        img: "",
+        mortgage: "",
+        rent: ""
+      };
+    }
+    default:
+      return state;
   }
-  default:
-    return state;
 }
 
 export default createStore(reducer);

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ListingHeader from "./../ListingHeader/ListingHeader";
+// import { Link } from "react-router-dom";
 
 class StepTwo extends Component {
   constructor() {
@@ -13,7 +14,9 @@ class StepTwo extends Component {
         <header>
           <ListingHeader />
         </header>
-        <main></main>
+        <main>
+          <h1>HELLOOOOO</h1>
+        </main>
       </div>
     );
   }
