@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Dashboard extends Component {
   constructor() {
@@ -12,6 +12,9 @@ class Dashboard extends Component {
       <div className="Dashboard">
         <header className="Dashboard-header">
           <h1>Dashboard</h1>
+          <Link to="/addproperty">
+            <button>Add New Property</button>
+          </Link>
         </header>
       </div>
     );
